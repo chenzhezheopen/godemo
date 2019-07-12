@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>sed</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <input type="text" id="txt">
+        <input type="button" onclick="send()" value="发送消息">
+        <script>
+            var sock=null
+            var url ="ws://localhost:7777/wat"
+            window.onload=function(){
+                 sock=new WebSocket(url)
+                 sock.onmessage=function(e){
+                    alert(e.data)
+                }
+            }
+
+            function send(){
+                    var kind = document.getElementById("txt").value
+                    console.log(kind)
+                    sock.send(kind)
+                }
+                
+        </script>
+    </body>
+</html>

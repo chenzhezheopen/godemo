@@ -1,0 +1,110 @@
+{
+    "mimetype": {
+        "bmp": "image/bmp",
+        "css": "text/css",
+        "dll": "application/octet-stream",
+        "exe": "application/octet-stream",
+        "gif": "image/gif",
+        "gz": "application/x-gzip",
+        "htm": "text/html",
+        "html": "text/html",
+        "ico": "image/x-icon",
+        "jpe": "image/jpeg",
+        "jpeg": "image/jpeg",
+        "jpg": "image/jpeg",
+        "js": "application/x-javascript",
+        "mov": "video/quicktime",
+        "mp3": "audio/mpeg",
+        "mpa": "video/mpeg",
+        "mpe": "video/mpeg",
+        "mpeg": "video/mpeg",
+        "mpg": "video/mpeg",
+        "pdf": "application/pdf",
+        "ra": "audio/x-pn-realaudio",
+        "rtf": "application/rtf",
+        "svg": "image/svg+xml",
+        "swf": "application/x-shockwave-flash",
+        "tif": "image/tiff",
+        "tiff": "image/tiff",
+        "txt": "text/plain",
+        "wav": "audio/x-wav",
+        "xlsx": "application/octet-stream",
+        "xls": "application/vnd.ms-excel",
+        "xlt": "application/vnd.ms-excel",
+        "zip": "application/zip"
+    },
+    "static": [{
+            "path": "/excel_export/",
+            "ext": ["xlsx"]
+        },
+        {
+            "path": "/html/",
+            "ext": ["html", "htm"]
+        },
+        {
+            "path": "/css/",
+            "ext": ["css"]
+        },
+        {
+            "path": "/js/",
+            "ext": ["js"]
+        },
+        {
+            "path": "/image/",
+            "ext": ["jpeg", "jpg", "gif", "png", "tif", "tiff", "bmp"]
+        },
+	{
+		"path":"/a/",
+		"ext":["html","css","js","image","jpg"]
+	},
+	{
+		"path":"/smbcard/",
+		"ext":["jpeg","jpg","gif","png","tif","tiff","bmp"]
+	},
+	{
+		"path":"/smbcurrent/",
+		"ext":["jpeg","jpg","gif","png","tif","tiff","bmp"]
+	},
+	{
+		"path":"/card/",
+		"ext":["jpeg","jpg","gif","png","tif","tiff","bmp"]
+	},
+	{
+		"path":"/current/",
+		"ext":["jpeg","jpg","gif","png","tif","tiff","bmp"]
+	},
+	{
+		"path":"/update/",
+		"ext":["zip"]
+	}
+    ],
+    "allowed_ip": "106.14.192.80",
+    "redisserver":"r-bp1a3ce98ff70584.redis.rds.aliyuncs.com:6379",
+    "redispass":"QzPm520025",
+    "voicemobile":"057985522115",
+    "frontcost":100,
+    "testfrontcost":100,
+    "backcost":100,
+    "testbackcost":100,
+    "jifei":{
+        "working":"142,/update/142.zip",
+	"testing":"142,/update/142.zip",
+	"internal":"142,/update/142.zip",
+	"testbars":[
+        ],
+        "internalbars":[
+            174,
+            175,
+            176,
+            177,
+            178
+        ]
+    },
+    "adminip":"180.108.42.130",
+    "feetimeout":300,
+    "logbar":175,
+    "alertthreshould":0.30,
+    "identserver":"http://60.191.250.111:8860",
+    "ourfirst":true,
+    "passthreshould":0.7
+}

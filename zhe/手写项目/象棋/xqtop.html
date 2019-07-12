@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>好好学习</title>
+    <style>
+        p::selection {
+            background:rgb(255, 255, 255);
+            color:#ff645d;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+	    var sock = null;
+        // var wsnum = null;
+	    var wsurl="ws://localhost:8088/xqto"
+        // var wsnum="ws://localhost:8088/num"
+        window.onload = function() {
+            sock = new WebSocket(wsurl);
+            // wsnum = new WebSocket(wsnum);
+            // wsnum.send("进入一名玩家");
+            // 收到消息后触发
+            sock.onmessage = function(e) {
+                // var man_num=document.getElementById("num").text
+                document.getElementById("num").text=e.data
+
+                console.log("收到消息后触发 message received: " + e.data);
+            }
+
+        }
+
+        // window.setInterval(function(){
+        //     sock.send("");
+        // },5000)
+        function send() {
+          var msg = document.getElementById('messa').value;
+            sock.send(msg);
+         };
+    </script>
+<h1>GoWebSocketDemo</h1>
+<form>
+        <p>
+                Message: <input id="messa" type="text" value="进入一名玩家">
+            </p>
+    <p id="men">
+        当前人数<a id="num">0</a>
+    </p>
+</form>
+<button onclick="send();">给服务器发送消息</button>
+</body>
+</html>

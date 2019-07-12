@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+	</head>
+	<body>
+		<form action="http://localhost:7878/img" method="post">
+			<input type="file" name="img"/>
+			
+			<input type="submit" value="提交"/>
+		</form>
+		<input type="button"  id="ii" value="发送" />
+	</body>
+	<script type="text/javascript">
+//			$(function(){
+//				$("#ii").click(function(){
+//					alert("aaa")
+//					$.ajax({
+//						type:"get",w's'
+//						url:"ws://localhost:7878/add",
+////						data:"123",
+//					});	
+//				})
+//			})
+			var wsurl = "ws://localhost:7878/add"
+			document.ready=function(){
+				sock = new WebSocket(wsuri);
+				sock.zonopen = function() {
+          			console.log(" 建立连接后触发 connected to " + wsuri);
+      			}
+			}
+		</script>
+</html>

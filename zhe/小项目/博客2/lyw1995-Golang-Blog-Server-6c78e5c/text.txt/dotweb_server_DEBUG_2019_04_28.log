@@ -1,0 +1,320 @@
+2019-04-28 16:24:59.0489 [DEBUG] [server.go:375] DotWeb:HttpServer SetEnabledGzip [true]
+2019-04-28 16:24:59.0529 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api]
+2019-04-28 16:24:59.0549 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1]
+2019-04-28 16:24:59.0569 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users]
+2019-04-28 16:24:59.0599 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users] [blogserver/controllers.(*UserController).Options-fm]
+2019-04-28 16:24:59.0609 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid] [blogserver/controllers.(*UserController).Options-fm]
+2019-04-28 16:24:59.0629 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users] [blogserver/controllers.(*UserController).InitBlog-fm]
+2019-04-28 16:24:59.0649 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid] [blogserver/controllers.(*UserController).GetUserByUid-fm]
+2019-04-28 16:24:59.0669 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users/:uid/links]
+2019-04-28 16:24:59.0679 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/links] [blogserver/controllers.(*LinkController).Options-fm]
+2019-04-28 16:24:59.0699 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/links/:lid] [blogserver/controllers.(*LinkController).Options-fm]
+2019-04-28 16:24:59.0719 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/links] [blogserver/controllers.(*LinkController).GetLinks-fm]
+2019-04-28 16:24:59.0739 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/links/:lid] [blogserver/controllers.(*LinkController).GetLinkById-fm]
+2019-04-28 16:24:59.0759 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users/:uid/categorys]
+2019-04-28 16:24:59.0779 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/categorys] [blogserver/controllers.(*CategoryController).Options-fm]
+2019-04-28 16:24:59.0789 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/categorys] [blogserver/controllers.(*CategoryController).GetCategorys-fm]
+2019-04-28 16:24:59.0799 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users/:uid/categorys/:cid/articles]
+2019-04-28 16:24:59.0819 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/categorys/:cid/articles] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.0829 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/categorys/:cid/articles/:aid] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.0849 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/categorys/:cid/articles] [blogserver/controllers.(*ArticleController).GetCategoryArticles-fm]
+2019-04-28 16:24:59.0869 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/categorys/:cid/articles/:aid] [blogserver/controllers.(*ArticleController).GetArticleById-fm]
+2019-04-28 16:24:59.0879 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users/:uid/articles]
+2019-04-28 16:24:59.0899 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/articles] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.0919 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/articles/:aid] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.0929 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/articles] [blogserver/controllers.(*ArticleController).GetUserArticles-fm]
+2019-04-28 16:24:59.0949 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/articles/:aid] [blogserver/controllers.(*ArticleController).GetArticleById-fm]
+2019-04-28 16:24:59.0959 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/users/:uid/other]
+2019-04-28 16:24:59.098 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/v1/users/:uid/other] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.0989 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/v1/users/:uid/other] [blogserver/controllers.(*ArticleController).GetHotAndNewArticles-fm]
+2019-04-28 16:24:59.101 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/v1/upload]
+2019-04-28 16:24:59.1029 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/v1/upload] [blogserver/controllers.(*UploadController).UploadImage-fm]
+2019-04-28 16:24:59.1049 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin]
+2019-04-28 16:24:59.1059 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/sessions]
+2019-04-28 16:24:59.1079 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/sessions] [blogserver/controllers.(*UserController).UserLogin-fm]
+2019-04-28 16:24:59.1099 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/sessions/:uid] [blogserver/controllers.(*UserController).UserLogout-fm]
+2019-04-28 16:24:59.1119 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/sessions/upload]
+2019-04-28 16:24:59.1129 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/sessions/upload] [blogserver/controllers.(*UploadController).UploadImage-fm]
+2019-04-28 16:24:59.1149 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/sessions/upload] [blogserver/controllers.(*UploadController).Options-fm]
+2019-04-28 16:24:59.1169 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/extends]
+2019-04-28 16:24:59.1179 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/extends] [blogserver/controllers.(*ExtendController).Options-fm]
+2019-04-28 16:24:59.12 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/extends] [blogserver/controllers.(*ExtendController).ExtByQueryParams-fm]
+2019-04-28 16:24:59.1209 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/extends] [blogserver/controllers.(*ExtendController).ArticleCollection-fm]
+2019-04-28 16:24:59.1229 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/users]
+2019-04-28 16:24:59.1259 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid] [blogserver/controllers.(*UserController).Options-fm]
+2019-04-28 16:24:59.1279 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users] [blogserver/controllers.(*UserController).Options-fm]
+2019-04-28 16:24:59.1299 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users] [blogserver/controllers.(*UserController).GetUsers-fm]
+2019-04-28 16:24:59.1339 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users/:uid] [blogserver/controllers.(*UserController).GetUserByUid-fm]
+2019-04-28 16:24:59.1369 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/users] [blogserver/controllers.(*UserController).CreateUser-fm]
+2019-04-28 16:24:59.1389 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users] [blogserver/controllers.(*UserController).DelAllUser-fm]
+2019-04-28 16:24:59.1409 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid] [blogserver/controllers.(*UserController).DelByUid-fm]
+2019-04-28 16:24:59.1429 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [PUT] [/api/admin/users/:uid] [blogserver/controllers.(*UserController).UpdateUserInfoByUid-fm]
+2019-04-28 16:24:59.1449 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/users/:uid/links]
+2019-04-28 16:24:59.1469 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/links] [blogserver/controllers.(*LinkController).Options-fm]
+2019-04-28 16:24:59.149 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/links/:lid] [blogserver/controllers.(*LinkController).Options-fm]
+2019-04-28 16:24:59.1509 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users/:uid/links] [blogserver/controllers.(*LinkController).GetLinks-fm]
+2019-04-28 16:24:59.1519 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/users/:uid/links] [blogserver/controllers.(*LinkController).CreateFriendlyLink-fm]
+2019-04-28 16:24:59.1549 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/links] [blogserver/controllers.(*LinkController).DelLinks-fm]
+2019-04-28 16:24:59.1569 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/links/:lid] [blogserver/controllers.(*LinkController).DelLinkById-fm]
+2019-04-28 16:24:59.1589 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [PUT] [/api/admin/users/:uid/links/:lid] [blogserver/controllers.(*LinkController).UpdateLinkById-fm]
+2019-04-28 16:24:59.1609 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/users/:uid/categorys]
+2019-04-28 16:24:59.1639 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/categorys] [blogserver/controllers.(*CategoryController).Options-fm]
+2019-04-28 16:24:59.1659 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/categorys/:cid] [blogserver/controllers.(*CategoryController).Options-fm]
+2019-04-28 16:24:59.1679 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users/:uid/categorys] [blogserver/controllers.(*CategoryController).GetPersonalCategorys-fm]
+2019-04-28 16:24:59.1699 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/users/:uid/categorys] [blogserver/controllers.(*CategoryController).CreateCategory-fm]
+2019-04-28 16:24:59.1719 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [PUT] [/api/admin/users/:uid/categorys/:cid] [blogserver/controllers.(*CategoryController).UpdateCategoryById-fm]
+2019-04-28 16:24:59.1769 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/categorys/:cid] [blogserver/controllers.(*CategoryController).DelCategoryById-fm]
+2019-04-28 16:24:59.1869 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/categorys] [blogserver/controllers.(*CategoryController).DelCategorys-fm]
+2019-04-28 16:24:59.1889 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/users/:uid/categorys/:cid/articles]
+2019-04-28 16:24:59.1919 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/categorys/:cid/articles] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.1949 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/categorys/:cid/articles/:aid] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.2209 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [POST] [/api/admin/users/:uid/categorys/:cid/articles] [blogserver/controllers.(*ArticleController).CreateArticleByCid-fm]
+2019-04-28 16:24:59.2229 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [PUT] [/api/admin/users/:uid/categorys/:cid/articles/:aid] [blogserver/controllers.(*ArticleController).UpdateArticleByCid-fm]
+2019-04-28 16:24:59.2289 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/categorys/:cid/articles] [blogserver/controllers.(*ArticleController).DelArticlesByCid-fm]
+2019-04-28 16:24:59.2439 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [DELETE] [/api/admin/users/:uid/categorys/:cid/articles/:aid] [blogserver/controllers.(*ArticleController).DelArticleByCid-fm]
+2019-04-28 16:24:59.2479 [DEBUG] [group.go:31] DotWeb:Group NewGroup [/api/admin/users/:uid/articles]
+2019-04-28 16:24:59.2509 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/articles] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.2529 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [OPTIONS] [/api/admin/users/:uid/articles/:aid] [blogserver/controllers.(*ArticleController).Options-fm]
+2019-04-28 16:24:59.2549 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users/:uid/articles] [blogserver/controllers.(*ArticleController).GetUserArticles-fm]
+2019-04-28 16:24:59.2579 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [GET] [/api/admin/users/:uid/articles/:aid] [blogserver/controllers.(*ArticleController).GetArticleWithState-fm]
+2019-04-28 16:24:59.2609 [DEBUG] [router.go:428] DotWeb:Router:RegisterRoute success [PUT] [/api/admin/users/:uid/articles/:aid] [blogserver/controllers.(*ArticleController).UpdateArticleWithState-fm]
+2019-04-28 16:25:07.0153 [DEBUG] [server.go:375] DotWeb:HttpServer SetEnabledGzip [true]
+2019-04-28 16:25:07.0173 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.0193 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.0214 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0243 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0263 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0283 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0313 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0343 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.0363 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] PUT^$^/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0383 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.0393 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0424 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.0443 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.0474 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.0493 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0513 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0564 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.0584 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.0604 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0614 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/sessions *dotweb.xMiddleware match
+2019-04-28 16:25:07.0634 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.0653 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] PUT^$^/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0674 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0684 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.0704 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0714 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/other *dotweb.xMiddleware match
+2019-04-28 16:25:07.0733 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/other *dotweb.xMiddleware match
+2019-04-28 16:25:07.0753 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/sessions/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0794 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] PUT^$^/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0824 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0864 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.0894 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] PUT^$^/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0914 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0944 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.0974 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.0994 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/v1/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.1114 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.1174 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1194 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1224 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1244 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/sessions/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.1284 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.1304 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.1334 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1384 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1414 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1434 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1474 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.1504 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.1544 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/image/*filepath *dotweb.xMiddleware match
+2019-04-28 16:25:07.1574 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.1594 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/v1/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.1614 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/sessions/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.1644 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] POST^$^/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.1664 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1684 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] OPTIONS^$^/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1714 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.1734 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] DELETE^$^/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.1784 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/v1/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1804 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.1834 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] GET^$^/api/admin/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.1864 [DEBUG] [dotweb.go:449] DotWeb initBindMiddleware [app] PUT^$^/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1884 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.1904 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.1924 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.1944 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.1974 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2014 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2044 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.2104 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2144 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2174 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2204 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2224 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2244 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.2284 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2304 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2324 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2344 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links/:lid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2364 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/links/:lid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2384 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.2404 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2414 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2434 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2444 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links/:lid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2474 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/links/:lid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2494 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.2514 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2524 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2544 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.2564 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2584 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2604 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.2614 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2624 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2644 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2664 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2684 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/categorys/:cid/articles/:aid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2694 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.2714 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2734 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2753 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2774 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2784 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/categorys/:cid/articles/:aid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2794 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.2814 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2824 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2844 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2864 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2884 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/articles/:aid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2904 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.2924 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2934 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2944 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.2964 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.2984 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/articles/:aid *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.2994 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/other *dotweb.xMiddleware match
+2019-04-28 16:25:07.3004 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/other *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3024 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/v1/users/:uid/other *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.3044 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/other *dotweb.xMiddleware match
+2019-04-28 16:25:07.3064 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/other *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3074 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/v1/users/:uid/other *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.3094 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/v1/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.3104 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/v1/upload *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3114 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/v1/upload *middleware.ApiSignMiddleware match
+2019-04-28 16:25:07.3134 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/sessions *dotweb.xMiddleware match
+2019-04-28 16:25:07.3144 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/sessions *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3164 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/sessions/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3174 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/sessions/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3194 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/sessions/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.3204 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/sessions/upload *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3224 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/sessions/upload *dotweb.xMiddleware match
+2019-04-28 16:25:07.3244 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/sessions/upload *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3253 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.3274 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/extends *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3284 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.3304 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/extends *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3314 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/extends *dotweb.xMiddleware match
+2019-04-28 16:25:07.3334 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/extends *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3344 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3364 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3384 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3404 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.3414 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3434 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3444 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.3464 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3484 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3494 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3514 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3544 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3554 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3584 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3594 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3614 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3624 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3644 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3654 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.3674 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3694 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3714 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users *dotweb.xMiddleware match
+2019-04-28 16:25:07.3724 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3744 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3764 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.3774 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3794 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3814 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3834 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links/:lid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3853 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/links/:lid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3874 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3884 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/links/:lid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3894 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/links/:lid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3914 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.3934 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3944 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links *jwt.JWTMiddleware match
+2019-04-28 16:25:07.3964 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links/:lid *dotweb.xMiddleware match
+2019-04-28 16:25:07.3974 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links/:lid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.3994 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/links/:lid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4004 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.4034 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4044 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/links *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4064 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/links *dotweb.xMiddleware match
+2019-04-28 16:25:07.4074 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/links *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4094 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/links *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4104 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4124 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4144 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4153 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.4174 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4184 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/categorys *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4204 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.4224 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4244 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4253 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4273 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4294 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4304 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4324 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4344 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4364 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.4374 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4394 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4404 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys *dotweb.xMiddleware match
+2019-04-28 16:25:07.4424 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4444 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4464 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4484 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4494 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4504 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.4524 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys/:cid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4534 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] POST_/api/admin/users/:uid/categorys/:cid/articles *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4553 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4574 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4594 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/categorys/:cid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4614 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.4624 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4644 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4664 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4674 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4694 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] DELETE_/api/admin/users/:uid/categorys/:cid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4714 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.4734 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4744 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/categorys/:cid/articles *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4764 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4784 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4794 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4824 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.4844 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4864 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4874 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4894 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4904 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] GET_/api/admin/users/:uid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4924 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/articles/:aid *dotweb.xMiddleware match
+2019-04-28 16:25:07.4934 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/articles/:aid *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4954 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] PUT_/api/admin/users/:uid/articles/:aid *jwt.JWTMiddleware match
+2019-04-28 16:25:07.4974 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles *dotweb.xMiddleware match
+2019-04-28 16:25:07.4984 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles *middleware.CrosMiddleware match
+2019-04-28 16:25:07.4994 [DEBUG] [dotweb.go:484] DotWeb initBindMiddleware [group] OPTIONS_/api/admin/users/:uid/articles *jwt.JWTMiddleware match
+2019-04-28 16:25:07.5014 [DEBUG] [server.go:96] DotWeb:HttpServer ListenAndServe [:8888]

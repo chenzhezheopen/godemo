@@ -1,0 +1,64 @@
+
+2019/04/22 session.go:124: cookie is : UID=6OpdnLR4MGxk2fWZNUXLlTopRKluz0NSMKX-ID0caXg%3D err is : <nil>
+
+2019/04/22 session.go:124: cookie is : UID=6OpdnLR4MGxk2fWZNUXLlTopRKluz0NSMKX-ID0caXg%3D err is : <nil>
+
+2019/04/22 session.go:124: cookie is : UID=ZlSn96GvAW4wYBKm0lugEzvgkq20Fcktiub0LFq6pIU%3D err is : <nil>
+
+2019/04/22 session.go:124: cookie is : UID=ZlSn96GvAW4wYBKm0lugEzvgkq20Fcktiub0LFq6pIU%3D err is : <nil>
+
+2019/04/22 session.go:122: cookie is :  err is : http: named cookie not present
+
+2019/04/22 session.go:124: CheckCookieValid err 01
+
+2019/04/22 session.go:122: cookie is : 2222=EZ7RVsKTUwq7GDwQLUwZBG8K-lgL6-z0N47N7UDdxMs%3D err is : <nil>
+
+2019/04/22 session.go:122: cookie is : 2222=8JpJc6k9LnhkZxLphob8Eg_PL9t3OJjr68Mjj4dEze8%3D err is : <nil>
+
+2019/04/22 session.go:122: cookie is : 2222=8JpJc6k9LnhkZxLphob8Eg_PL9t3OJjr68Mjj4dEze8%3D err is : <nil>
+
+2019/04/22 session.go:137: CheckCookieValid err 02
+
+2019/04/22 session.go:122: cookie is : 2222=8JpJc6k9LnhkZxLphob8Eg_PL9t3OJjr68Mjj4dEze8%3D err is : <nil>
+
+2019/04/22 session.go:137: CheckCookieValid err 02
+
+2019/04/22 session.go:122: cookie is : 2222=tI95uyuNBBWaqJNG99nvR9uD3i4HeuJRtWktsUj2ro0%3D err is : <nil>
+
+2019/04/22 session.go:122: cookie is : 2222=G6bFBxSD5b-4x_E5ufn5-Wun3N2ruPv1QHUz2eTd6v4%3D err is : <nil>
+
+2019/04/23 session.go:123: cookie is : 2222=OXSa7UA6hRll8x452doEUv8mdVRJ_Zxm3kE3cogX8Uc%3D err is : <nil>
+
+2019/04/23 session.go:123: cookie is : 2222=Kqi-HVNk0l_d3UfAxUIMYiXRpngabI56XQjr5KZ6FxU%3D err is : <nil>
+
+2019/04/23 session.go:123: cookie is : 2222=Kqi-HVNk0l_d3UfAxUIMYiXRpngabI56XQjr5KZ6FxU%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02
+
+2019/04/23 session.go:123: cookie is : 2222=nq8vxN247j35I4zbOmzlMYiEfj5hzKvIsHfAB6UtbHs%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02
+
+2019/04/23 session.go:123: cookie is : 2222=nq8vxN247j35I4zbOmzlMYiEfj5hzKvIsHfAB6UtbHs%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02
+
+2019/04/23 session.go:123: cookie is : 2222=nq8vxN247j35I4zbOmzlMYiEfj5hzKvIsHfAB6UtbHs%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02
+
+2019/04/23 session.go:123: cookie is : 2222=nq8vxN247j35I4zbOmzlMYiEfj5hzKvIsHfAB6UtbHs%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02
+
+2019/04/23 session.go:123: cookie is :  err is : http: named cookie not present
+
+2019/04/23 session.go:125: CheckCookieValid err 01
+
+2019/04/23 session.go:123: cookie is :  err is : http: named cookie not present
+
+2019/04/23 session.go:125: CheckCookieValid err 01
+
+2019/04/23 session.go:123: cookie is : 2222=ohT5ZKztNLI6xIR74E42OE0svIjrNcDNDRIN18j9CoE%3D err is : <nil>
+
+2019/04/23 session.go:138: CheckCookieValid err 02

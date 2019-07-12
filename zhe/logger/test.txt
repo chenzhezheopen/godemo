@@ -1,0 +1,14 @@
+
+2019/04/10 12:23:36 logger1.go:14: lllllll
+
+2019/04/10 logger1.go:14: lllllll
+
+2019/04/10 logger1.go:15: lllllll
+
+2019/04/10 logger1.go:17: lllllll
+
+2019/04/10 logger1.go:18: lllllll
+
+2019/04/10 logger1.go:19: lllllll
+
+2019/04/15 logger1.go:19: lllllll
